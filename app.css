@@ -1,0 +1,37 @@
+
+
+
+.repo {
+    margin-top: 16px;
+}
+
+a {
+    text-decoration: none;
+    color: green;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: green;
+}
+
+.pokemon {
+    border: 2px black solid;
+}
+
+.poke-img {
+    border: 1px solid green;
+    width: 128px;
+}
+
+.main-container {
+    display: flex;
+}
+
+.left-side {
+    width: 25%;
+}
+
+.right-side {
+    width: 75%;
+}

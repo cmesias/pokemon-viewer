@@ -1,0 +1,61 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Load Pokemon</title>
+    <link rel="stylesheet" href="app.css">
+    <script src="app.js"></script>
+</head>
+<body>
+    <div class="main-container">
+        <div class="left-side">
+            <h1>Pokemon Viewer</h1>
+            <form>
+                <!-- Input -->
+                Enter name or id: <input type="text" id="pokemon-id" placeholder="value between 1 - 1025">
+        
+                <!-- Btn -->
+                <div>
+                    <button type="button" id="get-pokemon">Get pokemon!</button>
+                    <button type="button" id="rand-pokemon">Random pokemon!</button>
+                </div>
+
+                <!-- Github page -->
+                <div class="repo">
+                    <a href="https://github.com/cmesias/pokemon-viewer" target="_blank">Github repo</a>
+                </div>
+        </div>
+        <div class="right-side">
+            <!-- Container that holds each pokemon -->
+            <div id="pokemon-container">
+    
+                <!-- Pokemon -->
+                <!-- <div class="pokemon"> -->
+
+                    <!-- Pokemon image, front -->
+                    <!-- <img class="poke-img" src="https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/133.png"> -->
+
+                    <!-- Pokemon image, back -->
+                    <!-- <img class="poke-img" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/35.png"> -->
+
+                    <!-- Pokemon image, front, shiny -->
+                    <!-- <img class="poke-img" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/35.png"> -->
+                    
+                    <!-- Pokemon Name -->
+                    <!-- <p class="poke-name"><b>Pokemon name</b>: </p> -->
+
+                    <!-- Pokemon Id -->
+                    <!-- <p class="poke-id"><b>Pokemon id</b>: </p> -->
+        
+                    <!-- Pokemon Latest Audio -->
+                    <!-- <p class="poke-sfx">Pokemon name</p> -->
+                    <!-- <audio controls src="https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/${id}.ogg" class="poke-sfx">Pokemon name</audio> -->
+                <!-- </div> -->
+            </div>
+        </div>
+    </div>
+</body>
+</html>
