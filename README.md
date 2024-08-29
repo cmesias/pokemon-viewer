@@ -3,5 +3,5 @@ Retrieve a pokemon by id using The RESTful Pokémon API on 'https://pokeapi.co/'
 
 Live website: [https://cmesias.github.io/pokemon-viewer/](https://cmesias.github.io/pokemon-viewer/)
 
-# Website
+# screenshot
 ![image](https://github.com/user-attachments/assets/eedba0ea-b6c5-4440-b453-4b5056269532)
