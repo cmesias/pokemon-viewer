@@ -93,7 +93,7 @@ document.addEventListener('DOMContentLoaded', function() {
             // append div to main container
             mainContainer.append(div);
 
-            // what this do again?
+            // callback
             cb(data)
         });
     };
