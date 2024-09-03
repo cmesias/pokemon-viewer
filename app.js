@@ -14,26 +14,20 @@ document.addEventListener('DOMContentLoaded', function() {
 
         // if input value is a number
         if (typeof pkmnInput.value === 'number') {
-            loadPokemon(pkmnInput.value, (pokemon) => {
-                //console.log(pokemon);
-            });
+            loadPokemon(pkmnInput.value, (pokemon));
         } 
 
         // if input value isn't a number, make it lowercase
         else {
             let string = "" + pkmnInput.value;
-            loadPokemon(string.toLowerCase(), (pokemon) => {
-                //console.log(pokemon);
-            });
+            loadPokemon(string.toLowerCase(), (pokemon));
         }
 
     });
 
     // listen for clicks of button
     getRandPkmnBtn.addEventListener('click', function() {
-        loadPokemon(getRandPokeId(), (pokemon) => {
-            console.log(pokemon);
-        });
+        loadPokemon(getRandPokeId(), (pokemon));
     });
 
     // function that loads a pokemon
