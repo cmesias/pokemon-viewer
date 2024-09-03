@@ -14,20 +14,26 @@ document.addEventListener('DOMContentLoaded', function() {
 
         // if input value is a number
         if (typeof pkmnInput.value === 'number') {
-            loadPokemon(pkmnInput.value, (pokemon));
+            loadPokemon(pkmnInput.value, (pokemon) => {
+                // console.log(pokemon):
+            });
         } 
 
         // if input value isn't a number, make it lowercase
         else {
             let string = "" + pkmnInput.value;
-            loadPokemon(string.toLowerCase(), (pokemon));
+            loadPokemon(string.toLowerCase(), (pokemon) => {
+                // console.log(pokemon):
+            });
         }
 
     });
 
     // listen for clicks of button
     getRandPkmnBtn.addEventListener('click', function() {
-        loadPokemon(getRandPokeId(), (pokemon));
+        loadPokemon(getRandPokeId(), (pokemon) => {
+            // console.log(pokemon):
+        });
     });
 
     // function that loads a pokemon
@@ -97,7 +103,7 @@ document.addEventListener('DOMContentLoaded', function() {
     loadPokemon(getRandPokeId(), function() {});
 });
 
-// there are a max of 1025 pokemon ids
+// returns a number based on max number of pokemon (1 - 1025, inclusive)
 function getRandPokeId() {
     return Math.floor( Math.random() * 1024 + 1);
 }
