@@ -28,6 +28,11 @@ document.addEventListener('DOMContentLoaded', function () {
         if (typeof pkmnInput.value === 'number') {
             loadPokemon(pkmnInput.value);
         }
+
+        // if input value is a string
+        else if (typeof pkmnInput.value === 'string') {
+            loadPokemon(pkmnInput.value);
+        } 
     });
 
     // Get random pokemon
@@ -37,8 +42,10 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // function that loads a pokemon
     async function loadPokemon(id) {
+        // wait for api response
         const response = await axios.get(`https://pokeapi.co/api/v2/pokemon/${id}/`)
 
+        // store data in let
         let data = response.data;
 
         // create div (pokemon)
@@ -91,4 +98,7 @@ document.addEventListener('DOMContentLoaded', function () {
         // append div to main container
         mainContainer.append(div);
     };
+
+    // Get random pokemon on launch
+    loadPokemon(getRandPokeId());
 });
